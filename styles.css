@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #000033 20%, #000000 80%);
+    color: white;
+}
+
+.sidebar {
+    width: 250px;
+    background: #111;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    color: white;
+}
+
+.dp {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 28px; /* Increased text size */
+}
+
+.role {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px; /* Increased text size */
+    color: #ccc;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo a {
+    margin: 0 5px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    background: transparent;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 18px; /* Increased text size */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #444;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-content {
+    text-align: center;
+    position: relative;
+}
+
+.home-photo {
+    width: 100%;
+    height: auto;
+    max-width: 1200px; /* Adjusted for full width */
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.i-am {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px; /* Increased text size */
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#role-animation {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    padding-right: 5px;
+}
+
+section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px; /* Increased heading size */
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #f36f6f;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.graphics-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px; /* Adjusted for proper framing */
+    margin: 20px 0;
+    position: relative;
+    height: 300px; /* Adjusted height for better visibility */
+}
+
+.graphics-slider img {
+    width: auto; /* Maintain original dimensions */
+    height: 100%; /* Scale height to fit container */
+    max-width: 200px; /* Ensuring images are smaller but visible */
+    flex-shrink: 0;
+    margin-right: 10px; /* Space between images */
+    transition: transform 0.3s ease-in-out;
+}
+
+.graphics-slider img.clicked {
+    transform: scale(1.5); /* Scale up image on click */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap */
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 90%;
+    max-width: 600px; /* Increased max-width */
+    padding: 15px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px; /* Increased text size */
+}
+
+#contact button {
+    width: 200px; /* Increased button size */
+    padding: 15px;
+    background: #444;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px; /* Increased text size */
+}
+
+#contact button:hover {
+    background: #555;
+}
+
+#contact form input, #contact form textarea {
+    text-align: center; /* Center aligned text in form elements */
+}
